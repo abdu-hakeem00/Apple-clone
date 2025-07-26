@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apple Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <nav role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="left" aria-label="Primary navigation links">
+        <a href="#" aria-label="Apple Home">
+          <svg class="apple-logo" viewBox="0 0 14 17" fill="none" 
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <path d="M11.265 11.7c-.08.18-.17.36-.27.54a6.47 6.47 0 01-1.72 1.989c-.96.76-1.91 1.11-2.11 1.17-.25.08-.48.08-.27-.25.19-.28.4-.59.47-.94a.301.301 0 00-.05-.26c-.09-.11-.35-.32-.6-.5-1.05-.87-1.33-2.625-.29-4.326.57-.96 1.6-1.58 2.27-1.58.26 0 1.04-.34 1.46-1.04a2.738 2.738 0 00-.11-2.62c-.23-.36-.62-.65-1.08-.82-.02 0-.05-.01-.07-.01-.23 0-.35.3-.1.41.49.22.7.83.84 1.43-.19.23-.45.39-.7.43-.16.03-.26 0-.24-.12a.999.999 0 011.59-.8 1.315 1.315 0 01-.06 1.81l.02.02" fill="currentColor"/>
+            <path d="M9.657 5.497a2.4 2.4 0 01-1.44.67c-.42 0-.93-.23-1.2-.52-.16-.16-.8-.78-1.36-1.51-.19-.25-.43-.26-.6-.24-.34 0-.72.19-.72.19-.61 0-1.76 1.25-1.95 3.29a9.406 9.406 0 00-.03 1.22c.07.82.52 2.7 1.39 3.5a4.784 4.784 0 002.34-1.06c.3-.29.52-.66.65-1.05l1.3-3.55" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="#">Store</a>
+        <a href="#">Mac</a>
+        <a href="#">iPad</a>
+        <a href="#">iPhone</a>
+        <a href="#">Watch</a>
+        <a href="#">AirPods</a>
+        <a href="#">TV & Home</a>
+        <a href="#">Only on Apple</a>
+        <a href="#">Accessories</a>
+        <a href="#">Support</a>
+      </div>
+      <div class="right" aria-label="Utility navigation links">
+        <a href="#" aria-label="Search">🔍</a>
+        <a href="#" aria-label="Shopping bag">🛒</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero section with speech bubbles + background pattern -->
+  <section class="hero-pattern" aria-label="Mac or iPad for college promotion">
+    <div class="pattern-background" aria-hidden="true"></div>
+    <div class="content" role="main" aria-labelledby="hero-title">
+      <div class="speech-bubble" id="hero-title">
+        Buy Mac or iPad<br />
+        for college
+        <span class="speech-subtext">with education savings</span>
+      </div>
+      <div class="speech-bubble">
+        Choose AirPods or<br />
+        an eligible accessory
+        <span class="speech-subtext"> </span>
+      </div>
+      <a href="#" class="shop-btn" role="button" aria-label="Shop now for education savings and accessories">Shop</a>
+    </div>
+  </section>
+
+  <!-- iPhone section -->
+  <section class="section-iphone" aria-labelledby="iphone-main-title">
+    <h1 id="iphone-main-title" class="iphone-title">iPhone</h1>
+    <p class="iphone-subtitle">Meet the iPhone 16 family.</p>
+    <div class="iphone-buttons" role="group" aria-label="iPhone actions">
+      <a href="#" role="button">Learn more</a>
+      <a href="#" role="button">Shop iPhone</a>
+    </div>
+    <div class="iphone-intel" aria-label="Note about Apple Intelligence">
+      Built for Apple Intelligence
+    </div>
+    <div class="iphone-images" aria-hidden="true">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/adec6653-8f33-4c50-a18c-72adc147027d.png" alt="Gold iPhone 16 with visible rear triple camera system" />
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4b7b09f1-29db-41e2-94ba-686024e04289.png" alt="Blue iPhone 16 with rear dual camera system" />
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2f17ba9e-1883-434c-a6c2-3fa1a9311f4d.png" alt="White iPhone 16 with single rear camera" />
+    </div>
+  </section>
+
+  <!-- Apple Intelligence video section -->
+  <section class="section-intelligence" aria-label="Apple Intelligence video preview" role="region">
+    <div class="intelligence-video-wrapper">
+      <video autoplay muted loop playsinline aria-hidden="true" tabindex="-1">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" />
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+        <!-- fallback -->
+      </video>
+      <div class="intelligence-overlay">
+        <h2>Apple Intelligence</h2>
+        <p>Turn a poster into a Calendar event with visual intelligence.<sup>2</sup></p>
+        <div class="btns">
+          <a href="#" role="button">Watch film clip</a>
+          <a href="#" role="button">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product grid section -->
+  <section class="product-grid" aria-label="Featured products">
+    <article class="product-card dark" tabindex="0" aria-label="iPad Pro product">
+      <div class="content">
+        <h3>iPad Pro</h3>
+        <p>Unbelievably thin. Incredibly powerful.</p>
+        <div class="btn-group">
+          <a href="#" role="button">Learn more</a>
+          <a href="#" class="buy-btn">Buy</a>
+        </div>
+      </div>
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fc555b38-931d-4d22-a0f7-430ea1b43993.png" alt="Sleek black iPad Pro shown side on with screen in portrait orientation" />
+    </article>
+
+    <article class="product-card dark" tabindex="0" aria-label="MacBook Air product">
+      <div class="content">
+        <h3>MacBook Air</h3>
+        <p>Sky blue color<br />Sky high performance with M4.</p>
+        <div class="btn-group">
+          <a href="#" role="button">Learn more</a>
+          <a href="#" class="buy-btn">Buy</a>
+        </div>
+      </div>
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dd2e2881-6fdb-4c54-9373-e9e7dbadb995.png" alt="MacBook Air laptop open in sky blue color, tilted up at a slight angle" />
+    </article>
+
+    <article class="product-card dark" tabindex="0" aria-label="Apple Watch Series 10 product">
+      <div class="content">
+        <h3> WATCH Series 10</h3>
+        <p>Timeless classic.</p>
+        <div class="btn-group">
+          <a href="#" role="button">Learn more</a>
+          <a href="#" class="buy-btn">Buy</a>
+        </div>
+      </div>
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/49319297-033b-4725-8dff-abfcd44b5dd6.png" alt="Black Apple Watch Series 10 showing digital crown and detailed watch face" />
+    </article>
+
+    <article class="product-card dark" tabindex="0" aria-label="AirPods Pro 2 product">
+      <div class="content">
+        <h3>AirPods Pro 2</h3>
+        <p>Now with a Hearing Aid feature.<sup>3</sup></p>
+        <div class="btn-group">
+          <a href="#" role="button">Learn more</a>
+          <a href="#" class="buy-btn">Buy</a>
+        </div>
+      </div>
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b9a2a6a1-aa6e-4928-94e5-5737436ae0b2.png" alt="Side profile of a woman wearing AirPods Pro 2 showing blue sound waves symbolizing Hearing Aid feature" />
+    </article>
+
+    <article class="product-card" tabindex="0" aria-label="Apple Trade In offer">
+      <div class="content">
+        <h3>Trade In</h3>
+        <p>Get $160-$600 in credit when you trade in iPhone 12 or higher<sup>4</sup></p>
+        <div class="btn-group">
+          <a href="#" role="button">See how it works</a>
+        </div>
+      </div>
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/06f8c488-775b-448c-9adb-1cdfb3798807.png" alt="A hand holding an iPhone with colorful case next to another hand holding another iPhone sideways" />
+    </article>
+
+    <article class="product-card" tabindex="0" aria-label="Apple Card offer">
+      <div class="content">
+        <h3>Card</h3>
+        <p>Get up to 3% Daily Cash back with every purchase.</p>
+        <div class="btn-group">
+          <a href="#" role="button">Learn more</a>
+          <a href="#" class="buy-btn">Apply now</a>
+        </div>
+      </div>
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/83117d22-8faa-4566-a5cf-5468c71859ed.png" alt="White Apple Card angled on a white background, showcasing its sleek metal design" />
+    </article>
+  </section>
+
+  <!-- Apple TV+ banner with carousel -->
+  <section aria-label="Apple TV+ Friday Night Baseball promotion" style="max-width: 1200px; margin: 0 auto 60px; padding: 0 20px;">
+    <div class="product-card" style="border-radius: 36px; overflow: hidden; position: relative; box-shadow: 0 8px 40px rgb(0 0 0 / 0.2);">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e07a0402-7030-4bbd-86a9-be1105244731.png" alt="Promotion banner showing baseball players in action for Apple TV+ Friday Night Baseball" style="width: 100%; display: block;" />
+      <div style="position: absolute; bottom: 32px; left: 48px; color: white; font-weight: 600; font-size: 24px;">
+        <div>tv+</div>
+        <div style="font-size: 22px; margin-top: 6px;">Friday Night Baseball</div>
+        <button style="margin-top: 12px; background-color: white; border: none; border-radius: 18px; padding: 10px 28px; font-weight: 700; font-size: 14px; cursor: pointer; color: #0071e3;">See the schedule</button>
+        <p style="font-size: 14px; margin-top: 6px;">Live MLB games, every Friday.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer carousel with cards -->
+  <section class="footer-carousel" aria-label="Featured media and content">
+    <article class="footer-card" tabindex="0">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/da8316dc-f183-4759-a9e8-7e8dc5b47132.png" alt="Illustration of a woman working out for Apple Fitness+ training sessions" />
+      <div class="title">Apple Fitness+</div>
+      <div class="subtitle">Full video combo for every body.</div>
+    </article>
+    <article class="footer-card" tabindex="0">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4c8c8a8b-7f4a-42e3-b8fb-42008c85415f.png" alt="Portrait photo of Seth Rogen and Zane Lowe for Apple Music interview" />
+      <div class="title">Seth Rogen & Zane Lowe</div>
+      <div class="subtitle">Apple Music interview.</div>
+    </article>
+    <article class="footer-card" tabindex="0">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7a78fdda-a255-4769-8e67-1b964184a784.png" alt="Panoramic view of lush green trees and mountains under blue sky with clouds, for Apple TV nature documentary" />
+      <div class="title">Nature</div>
+      <div class="subtitle">Panoramic landscape with trees and sky.</div>
+    </article>
+    <article class="footer-card" tabindex="0">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ae77e8de-d0d9-4778-9313-804caaaeaadd.png" alt="Bright, modern office interior with large windows showing city skyline" />
+      <div class="title">Strength</div>
+      <div class="subtitle">Motivation and growth.</div>
+    </article>
+  </section>
+
+  <!-- Disclaimer text -->
+  <section class="disclaimer" aria-label="Legal and regulatory information">
+    <p>
+      <small>
+        1. Available for qualified Purchasers and subject to terms and conditions; some benefits require a valid Student ID, university-issued email ...
+        <br /><br />
+        2. Visual intelligence requires iOS 16 or later and supported device; requires user enrollment in Photos app.
+        <br /><br />
+        3. Hearing Aid feature available with AirPods Pro (2nd generation) and compatible devices.
+        <br /><br />
+        4. Trade-in values vary. See apple.com/trade-in for details.
+      </small>
+    </p>
+  </section>
+
+  <!-- Footer with multiple columns of links -->
+  <footer aria-label="Site footer with navigation and legal links">
+    <div class="footer-grid" role="list">
+      <section>
+        <h5>Shop and Learn</h5>
+        <ul>
+          <li><a href="#">Mac</a></li>
+          <li><a href="#">iPad</a></li>
+          <li><a href="#">iPhone</a></li>
+          <li><a href="#">Watch</a></li>
+          <li><a href="#">AirPods</a></li>
+          <li><a href="#">TV & Home</a></li>
+          <li><a href="#">AirTag</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#">Apple Music</a></li>
+          <li><a href="#">Apple TV+</a></li>
+          <li><a href="#">Apple Fitness+</a></li>
+          <li><a href="#">Apple News+</a></li>
+          <li><a href="#">Apple Arcade</a></li>
+          <li><a href="#">iCloud</a></li>
+          <li><a href="#">Apple One</a></li>
+          <li><a href="#">Apple Card</a></li>
+          <li><a href="#">Apple Books</a></li>
+          <li><a href="#">App Store</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>Account</h5>
+        <ul>
+          <li><a href="#">Manage Your Apple ID</a></li>
+          <li><a href="#">Apple Store Account</a></li>
+          <li><a href="#">iCloud.com</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>Apple Store</h5>
+        <ul>
+          <li><a href="#">Find a Store</a></li>
+          <li><a href="#">Genius Bar</a></li>
+          <li><a href="#">Today at Apple</a></li>
+          <li><a href="#">Apple Camp</a></li>
+          <li><a href="#">Apple Store App</a></li>
+          <li><a href="#">Certified Refurbished</a></li>
+          <li><a href="#">Apple Trade In</a></li>
+          <li><a href="#">Financing</a></li>
+          <li><a href="#">Carrier Deals at Apple</a></li>
+          <li><a href="#">Order Status</a></li>
+          <li><a href="#">Shopping Help</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>For Business</h5>
+        <ul>
+          <li><a href="#">Apple and Business</a></li>
+          <li><a href="#">Shop for Business</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>For Education</h5>
+        <ul>
+          <li><a href="#">Apple and Education</a></li>
+          <li><a href="#">Shop for K-12</a></li>
+          <li><a href="#">Shop for College</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>For Healthcare</h5>
+        <ul>
+          <li><a href="#">Apple in Healthcare</a></li>
+          <li><a href="#">Health on Apple Watch</a></li>
+          <li><a href="#">Health Records on iPhone</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>For Government</h5>
+        <ul>
+          <li><a href="#">Shop for Government</a></li>
+          <li><a href="#">Shop for Veterans and Military</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>Apple Values</h5>
+        <ul>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Environment</a></li>
+          <li><a href="#">Inclusion and Diversity</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Supplier Responsibility</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>About Apple</h5>
+        <ul>
+          <li><a href="#">Newsroom</a></li>
+          <li><a href="#">Apple Leadership</a></li>
+          <li><a href="#">Career Opportunities</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Ethics & Compliance</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contact Apple</a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="sm-text" aria-label="Copyright and terms">
+      More ways to shop: <a href="#">Find an Apple Store</a> or <a href="#">other retailer</a> near you. Or call 1‑800‑MY‑APPLE.
+      <br />Copyright © 2024 Apple Inc. All rights reserved.
+    </p>
+  </footer>
+</body>
+</html>
+
